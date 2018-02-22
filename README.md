@@ -2,17 +2,17 @@
 
 --- set up working directory
 
-mkdir WJets13TeVGeN
+mkdir WJetsGenMaker16
 
-cd WJets13TeVGeN
+cd WJetsGenMaker16
 
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 
 export SCRAM_ARCH=slc6_amd64_gcc493
 
-cmsrel CMSSW_7_6_4
+cmsrel CMSSW_8_0_20
 
-cd CMSSW_7_6_4/src
+cd CMSSW_8_0_20/src
 
 cmsenv
 
@@ -30,7 +30,7 @@ mkdir WJets13TeV
 
 cd WJets13TeV
 
-git clone https://github.com/ahortian/WJets13TevGenAnalyzer.git
+git clone https://github.com/awisecar/WJets13TevGenAnalyzer.git
 
 --------------------------------------------------------------------------------
 -- Go to the directory
