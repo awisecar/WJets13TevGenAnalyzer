@@ -153,9 +153,13 @@ WJets13TevAnalyzer::WJets13TevAnalyzer(const edm::ParameterSet& iConfig)
    //now do what ever initialization is needed
    usesResource("TFileService");
 	
-	theGenParLabel = consumes<reco::GenParticleCollection>(edm::InputTag("prunedGenParticles"));
+	//theGenParLabel = consumes<reco::GenParticleCollection>(edm::InputTag("prunedGenParticles"));
 	//theGenParLabel = consumes<pat::PackedGenParticleCollection>(edm::InputTag("packedGenParticles"));
-	theGenJetLabel = consumes<std::vector<reco::GenJet>>(edm::InputTag("slimmedGenJets"));
+	//theGenJetLabel = consumes<std::vector<reco::GenJet>>(edm::InputTag("slimmedGenJets"));
+	
+        //andrew
+        theGenParLabel = consumes<reco::GenParticleCollection>(edm::InputTag("genParticles"));
+        theGenJetLabel = consumes<std::vector<reco::GenJet>>(edm::InputTag("ak4GenJets"));
 	theGEvntInfLabel = consumes<GenEventInfoProduct>(edm::InputTag ("generator"));
 	theLHEEvtProdLabel = consumes<LHEEventProduct>(edm::InputTag ("externalLHEProducer"));
 	

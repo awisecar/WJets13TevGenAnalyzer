@@ -8,7 +8,7 @@ cd WJetsGenMaker16
 
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 
-export SCRAM_ARCH=slc6_amd64_gcc493
+(older CMSSW_7_6_4 doesn't seem to work...)
 
 cmsrel CMSSW_8_0_20
 
@@ -31,6 +31,8 @@ mkdir WJets13TeV
 cd WJets13TeV
 
 git clone https://github.com/awisecar/WJets13TevGenAnalyzer.git
+or
+git clone git@github.com:awisecar/WJets13TevGenAnalyzer.git
 
 --------------------------------------------------------------------------------
 -- Go to the directory
