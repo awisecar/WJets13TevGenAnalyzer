@@ -44,7 +44,13 @@ cd WJets13TevGenAnalyzer
 
 scram b
 
+1) For single instance:
 cmsRun wjets13tevanalyzer_cfg.py
+
+2) ...Or for submission to lxbatch:
+python runTreeGENNLO.py
+which will use the cfg file
+wjetsGENTreeMaker_batch_cfg.py
 
 --------------------------------------------------------------------------------
 -- for submitting crab jobs
