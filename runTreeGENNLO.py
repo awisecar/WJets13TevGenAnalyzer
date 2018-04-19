@@ -22,11 +22,11 @@ job += 'cd ' + cwd + ' \n'
 #job += 'eval `scramv1 runtime -sh` \n'
 
 ################
-njobs = 8
+njobs = 1
 doJet = [0]
 #doJet = [2]
 #doVariation = [108, 110, 112, 114, 117, 119, 122, 124]
-doVariation = [112, 124]
+doVariation = [112]
 ################
 
 for jet in doJet:

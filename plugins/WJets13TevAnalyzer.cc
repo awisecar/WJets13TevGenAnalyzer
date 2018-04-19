@@ -159,7 +159,8 @@ WJets13TevAnalyzer::WJets13TevAnalyzer(const edm::ParameterSet& iConfig)
 	
         //andrew
         theGenParLabel = consumes<reco::GenParticleCollection>(edm::InputTag("genParticles"));
-        theGenJetLabel = consumes<std::vector<reco::GenJet>>(edm::InputTag("ak4GenJets"));
+        //ak4GenJetsNoNu for GEN, slimmedGenJets for miniAOD
+        theGenJetLabel = consumes<std::vector<reco::GenJet>>(edm::InputTag("ak4GenJetsNoNu"));
 	theGEvntInfLabel = consumes<GenEventInfoProduct>(edm::InputTag ("generator"));
 	theLHEEvtProdLabel = consumes<LHEEventProduct>(edm::InputTag ("externalLHEProducer"));
 	
